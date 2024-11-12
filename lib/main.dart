@@ -41,13 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Text(
-          'ああああああああああいいいいいいいいいうううううううううえええええおおおおおおおおああああああああああいいいいいいいいいうううううううううえええええおおおおおおおお',
-          maxLines: 4,
-          overflow: TextOverflow.ellipsis,
+      body: Center(
+        child: ElevatedButton(
+          onPressed: (){
+            //ここに押したときの処理
+          },
+          child: Text('おしてね'),
         ),
-      ),
+        ),
     );
   }
 }
