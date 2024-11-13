@@ -42,13 +42,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: (){
-            //ここに押したときの処理
-          },
-          child: Text('おしてね'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            OutlinedButton(
+              onPressed: () {},
+              child: const Text('押してね'),
+            ),
+            ElevatedButton(onPressed: () {}, child: const Text("押してね"))
+          ],
         ),
-        ),
+      ),
     );
   }
 }
